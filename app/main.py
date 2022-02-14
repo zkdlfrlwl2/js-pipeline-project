@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root() -> dict:
-    return {"Hello": "MLOps !!!"}
+    return {"Hello": "github webhook testing"}
 
 
 @app.get("/items/{item_id}")
