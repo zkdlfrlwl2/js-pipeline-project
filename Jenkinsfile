@@ -37,7 +37,7 @@ pipeline {
 		stage("Tag and Push") {
 			steps {
 				withCredentials([[$class: 'UsernamePasswordMultiBinding',
-				credentialsId: 'jenkins-docker-hub', 
+				credentialsId: 'docker-hub', 
 				usernameVariable: 'DOCKER_USER_ID', 
 				passwordVariable: 'DOCKER_USER_PASSWORD'
 				]]) {
